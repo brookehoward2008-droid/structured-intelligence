@@ -1,18 +1,85 @@
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
 
 # Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Env
+# Env and secrets
 .env
 .env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.asc
 
-# Outputs
+# Local AI / agent runtime state
+.claude/
+.codex/
+.gemini/
+.openclaw/
+.mcp-state/
+.memory/
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and transcripts
+*.log
+logs/
+transcripts/
+sessions/
+*.jsonl
+
+# Generated outputs and caches
 knowledge/outputs/**/*.tmp
+knowledge/outputs/**/cache/
 .site/
+dist/
+build/
+out/
+coverage/
+.cache/
+tmp/
+temp/
+
+# Local book / design production exports
+*.indd
+*.idml
+*.pdf
+*.psd
+*.ai
+*.eps
+*.zip
+!docs/**/*.pdf
+!knowledge/**/*.md
+
+# Backup folders
+*_backup/
+*_BACKUP/
+backup/
+backups/
+archive-local/
